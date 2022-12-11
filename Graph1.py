@@ -10,7 +10,7 @@ x=[3,5,8,9,13]
 y=[2,4,7,8,11]
 
 
-#Instead of using "axisbg" use facecolor, it's used to change the graph's background color
+#Instead of using "axisbg" use facecolor, it's used to change the graph's background color and color of the line
 graph1 = fig.add_subplot(2,1,1,facecolor='blue')
 graph1.plot(x,y,'white',linewidth=4.0)
 
