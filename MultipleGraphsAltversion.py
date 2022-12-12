@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 fig = plt.figure()
 rect = fig.patch
-rect.set_facecolor('gray')
+rect.set_facecolor('white')
 
 x=[3,6,5,8,9,12]
 y=[2,4,5,7,9,11]
@@ -10,8 +10,9 @@ y2=[6,8,10,6]
 x3=[3,15,7]
 y3=[2,17,8]
 
+
 #Graph1 
-graph1 = fig.add_subplot(2,1,1,facecolor='blue')
+graph1 = fig.add_subplot(2,2,1,facecolor='blue')
 graph1.plot(x,y,'white',linewidth=4.0)
 graph1.tick_params(axis="x",color="purple")
 graph1.tick_params(axis='y',color='purple')
@@ -25,7 +26,7 @@ graph1.set_ylabel('Y-axis',color='pink')
 
 
 #Graph2
-graph2 = fig.add_subplot(2,1,2,facecolor='blue')
+graph2 = fig.add_subplot(2,2,2,facecolor='blue')
 graph2.plot(x2,y2,'red',linewidth=6.0)
 graph2.tick_params(axis="x",color="purple")
 graph2.tick_params(axis='y',color='purple')
@@ -33,9 +34,22 @@ graph2.spines["top"].set_color('y')
 graph2.spines["left"].set_color('y')
 graph2.spines["right"].set_color('y')
 graph2.spines["bottom"].set_color('y')
-graph2.set_title('Graph2',color='purple')
+graph2.set_title('Graph2',color='orange')
 graph2.set_xlabel('X-axis',color='red')
 graph2.set_ylabel('Y-axis',color='pink')
 
+
+#Graph3
+graph3 = fig.add_subplot(2,1,2,facecolor='blue')
+graph3.plot(x3,y3,'pink',linewidth=6.0)
+graph3.tick_params(axis="x",color="purple")
+graph3.tick_params(axis='y',color='purple')
+graph3.spines["top"].set_color('y')
+graph3.spines["left"].set_color('y')
+graph3.spines["right"].set_color('y')
+graph3.spines["bottom"].set_color('y')
+graph3.set_title('Graph3',color='Green')
+graph3.set_xlabel('X-axis',color='red')
+graph3.set_ylabel('Y-axis',color='pink')
 
 plt.show()
